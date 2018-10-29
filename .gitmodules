@@ -1,0 +1,6 @@
+[submodule "external/clipp"]
+	path = external/clipp
+	url = https://github.com/muellan/clipp.git
+[submodule "external/PigpioMS"]
+	path = external/PigpioMS
+	url = https://github.com/AkashiRobo/PigpioMS.git
