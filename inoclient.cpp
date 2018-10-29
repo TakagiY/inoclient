@@ -49,7 +49,8 @@ auto main(int argc, char *argv[]) -> int {
 
   auto reset_id =
       (command("reset") & command("id").set(action, action::reset_id),
-       value("new id"), option("--from") & value("current id"));
+       value("new id").set(reset_id::new_id),
+       option("--from") & value("current id").set(reset_id::current_id));
 
   auto inoclient = (send | scan | reset_id, option("--port") & value("path"));
 
